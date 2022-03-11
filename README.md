@@ -28,6 +28,6 @@ This will create a `.coverage` and `coverage.svg` file.
 
 Put this in your README.md
 
-```shell
+```md
 ![coverage badge](./coverage.svg)
 ```
