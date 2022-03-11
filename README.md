@@ -1,6 +1,6 @@
 # teste coverage
 
-[![Test Coverage](https://github.com/Squad-UECE/coverage-study/actions/workflows/test-coverage.yml/badge.svg?branch=main)](https://github.com/Squad-UECE/coverage-study/actions/workflows/test-coverage.yml)
+[![Test Coverage](https://github.com/Squad-UECE/coverage-test/actions/workflows/test-coverage.yml/badge.svg?branch=main)](https://github.com/Squad-UECE/coverage-test/actions/workflows/test-coverage.yml)
 ![coverage badge](./coverage.svg)
 
 This repository is a simple example of how to apply coverage test in your project using `pytest` and `pytest-cov`
