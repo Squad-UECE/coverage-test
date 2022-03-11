@@ -47,9 +47,9 @@ class TestCarro:
         carro.ligar()
         assert carro.desligar() == False
 
-    def test_andar(self, carro):
-        carro.ligar()
-        assert carro.andar(10) == None
+    # def test_andar(self, carro):
+    #     carro.ligar()
+    #     assert carro.andar(10) == None
 
     # def test_quando_anda_combustivel_diminui(self, carro):
     #     old_combustivel = carro.combustivel
