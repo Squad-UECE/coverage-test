@@ -6,7 +6,7 @@ class SemCombustivel(Exception):
         super().__init__(self.default_message, *args, **kwargs)
 
 
-class CarroDesligado(Exception):
+class VeiculoDesligado(Exception):
     def __init__(self, *args, **kwargs) -> None:
-        self.default_message = "Carro desligado"
+        self.default_message = "Veiculo desligado"
         super().__init__(self.default_message, *args, **kwargs)
