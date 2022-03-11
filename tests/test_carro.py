@@ -1,7 +1,7 @@
 import pytest
 
 from coverage_study import __version__
-from coverage_study.main import Carro
+from coverage_study.carro import Carro
 from coverage_study import exceptions
 
 def test_version():
@@ -37,11 +37,11 @@ class TestCarro:
 
     def test_desligar_erros(self, carro):
         with pytest.raises(
-            exceptions.CarroDesligado
+            exceptions.VeiculoDesligado
         ) as sem_combustivel:
             carro.desligar()
         
-        assert "Carro desligado" in str(sem_combustivel.value)
+        assert "Veiculo desligado" in str(sem_combustivel.value)
 
     def test_desligar(self, carro):
         carro.ligar()

@@ -1,7 +1,7 @@
 from . import exceptions
 
 
-class Carro:
+class Moto:
 
     def __init__(self, marca, modelo, cor, placa, ano):
         self.marca = marca
@@ -13,7 +13,7 @@ class Carro:
         self.ligado = False
 
     def __repr__(self) -> str:
-        return f"<Carro({self.marca}, {self.modelo}, {self.cor})>"
+        return f"<Moto({self.marca}, {self.modelo}, {self.cor})>"
 
     # decorators
     def _ligado(func):
@@ -21,7 +21,7 @@ class Carro:
             if self.ligado:
                 return func(self, *args, **kwargs)
             else:
-                raise exceptions.CarroDesligado
+                raise exceptions.VeiculoDesligado
         return wrapper
 
     def _combustivel(func):
@@ -47,7 +47,7 @@ class Carro:
     @_ligado
     @_combustivel
     def andar(self, km):
-        print("." * km + "🚗")
+        print("." * km + "🛵")
         self.combustivel = max(0, self.combustivel - (10 * km))
 
     def abastecer(self):
